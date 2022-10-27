@@ -1,0 +1,265 @@
+/*RESET CSS Start*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*RESET CSS End*/
+
+/*Desktop View*/
+body {
+  font-family: monospace;
+  background: linear-gradient(90deg, #ff9d9d 0%, #ffe1e1 100%);
+}
+#balance {
+  font-size: 26px;
+  margin-top: 15px;
+}
+#buyButton {
+  background-color: #ffdede;
+  border-radius: 100px;
+  box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 44, 0.15) 0 1px 2px, rgba(187, 44, 44, 0.15) 0 2px 4px,
+    rgba(187, 44, 44, 0.15) 0 4px 8px, rgba(187, 44, 44, 0.15) 0 8px 16px,
+    rgba(187, 44, 44, 0.15) 0 16px 32px;
+  color: #ef2275;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#buyButton:hover {
+  box-shadow: rgba(175, 57, 57, 0.35) 0 -25px 18px -14px inset,
+    rgba(96, 31, 31, 0.25) 0 1px 2px, rgba(96, 31, 31, 0.25) 0 2px 4px,
+    rgba(96, 31, 31, 0.25) 0 4px 8px, rgba(96, 31, 31, 0.25) 0 8px 16px,
+    rgba(96, 31, 31, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#coinandbill {
+  padding-left: 2rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+.coinAndBillSelection-1 {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.coinAndBillSelection-2 {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.machine {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-height: 43.75rem;
+  max-width: 31.25rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #6c6b6b;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 16px -5px 5px 15px rgba(0, 0, 0, 0.266);
+  border-radius: 5px;
+  margin-top: 5rem;
+}
+
+.machine-middle-title {
+  text-align: center;
+}
+
+h3 {
+  padding-left: 2rem;
+}
+.machine-bottom {
+  padding: 1rem;
+  background-color: rgb(239, 239, 239);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #6c6b6b;
+  margin-bottom: 5rem;
+}
+h2 {
+  text-align: center;
+}
+#listTitle {
+  width: max-content;
+}
+.product-details {
+  padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.purchaseListBody {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 10rem;
+  max-height: 10rem;
+  bottom: 0;
+  padding-right: 70rem;
+}
+.selectionButtons {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 5px;
+  border-color: #6c6b6b;
+  padding-bottom: 1rem;
+}
+.selectionButtons-1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.selectionButtons-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#selection {
+  font-size: 14px;
+  font-weight: 600;
+}
+#selectionImg {
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: 6.8rem;
+}
+ul {
+  width: max-content;
+}
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  width: 8rem;
+  height: 4rem;
+  cursor: pointer;
+  background-color: #ea73a1;
+  color: white;
+  border-radius: 5px;
+  border-color: #6c6b6b;
+  box-shadow: rgba(0, 0, 0, 0.308) 0 1px 2px, rgba(0, 0, 0, 0.236) 0 2px 4px, rgba(0, 0, 0, 0.269) 0 4px 8px,
+    rgba(0, 0, 0, 0.274) 0 8px 16px, rgba(0, 0, 0, 0.274) 0 8px 16px;
+}
+.ears {
+  margin: 0;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); left: 50%;
+  top: 5%;
+  
+}
+.bow {
+  margin: 0;
+  position: absolute;
+  z-index: 1100;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(40%, -50%); left: 50%;
+  top: 10%;
+  
+}

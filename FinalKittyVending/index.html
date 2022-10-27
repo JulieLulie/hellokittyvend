@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Julie's Vending Machine</title>
+  </head>
+    <body>
+      <div> <img class="kittytext" src="images/kittytext.png" height="83" width="292">
+      </div>
+     <div><img class="ears" src="images/ears.png" height="100" width="572"></div>
+     <div><img class="bow" src="images/bow.png" height="195" width="195"></div>
+      <div class="purchaseListBody">
+        <h3 id="listTitle">Purchase List:</h3>
+        <ul id="purchaseList">
+        </ul>
+      </div>
+      <div class="machine">
+      
+        <h3 id="balance">Balance: $<span id="balanceNumber">0</span></h3>
+        <p id="coinandbill">Money Count: </br><span id="coinandBillDisplay">Make a coin or bill selection...</span></p>
+        <!--coin images, bill image-->
+        <div class="machine-middle-title">
+        <h2>Money Selection:</h2>
+      </div>
+      <div class="machine-middle-body">
+        <div class="coinAndBillSelection-1">
+           <!--Money Start-->
+       
+          <div class="money">
+            <div> <img src="images/silcoin.png" id="fiftyUp" width="52" height="52">
+            </div>
+        </div>
+
+          <div class="money">
+            <div> <img src="images/goldcoin.png" id="oneUp" width="52" height="52">
+            </div>
+        </div>
+
+          <div class="money"> 
+            <div> <img src="images/twodollar.png" id="twoUp" width="149" height="63"> 
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Money End-->
+    <div class="machine-bottom">
+        <h2>Milk Selection:</h2>
+        <div class="selectionButtons">
+        <div class="selectionButtons-1">
+        <button class="btn" id="plain">Plain Milk</button>
+        <button class="btn" id="strawb">Strawberry Milk</button>
+        </div>
+        <div class="selectionButtons-2">
+        <button class="btn" id="banana">Banana Milk</button>
+        <button class="btn" id="taro">Taro Milk</button>
+      </div>
+    </div>
+    <div class="product-details">
+        <!--Drink images 250*250px -->
+        <img id="selectionImg" src="">
+        <p id="selection">Make a drink selection...</p>
+        <button id="buyButton">Buy <span id="buyName"></span></button>
+      </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      <!--Button to direct to admin-->
+      <div>
+      <button onclick="showAdmin()" type="button">Log in to Admin</button>
+      <br>
+      <br>
+<div>
+  <button onclick="hideAdmin()" type="button">Hide Admin</button>
+    <br>
+    <br>
+      <!--Restock Button testing-->
+      
+      <div id="showButton">
+        <p>Stock Count: </br><span id="stockDisplay"></span></p>
+        <div class="stock">
+        <div>
+        <button type="button" id="pUp" onclick="pStock()">Plain Milk Restock +1</button>
+        <br>
+      </div>
+      </div>
+      <div class="stock">
+      <div>
+        <button type="button" id="sUp" onclick="sStock()">Strawberry Milk Restock +1</button>
+      </div>
+      </div>
+      <div class="stock">
+      <div>
+        <button type="button" id="bUp" onclick="bStock()">Banana Milk Restock +1</button>
+        </div>
+        </div>
+        <div class="stock">
+        <div>
+        <button type="button" id="tUp" onclick="tStock()">Taro Milk Restock +1</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+  
+      <script src="script.js"></script>
+    </body>    
+</html>
